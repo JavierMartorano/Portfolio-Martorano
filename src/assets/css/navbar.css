@@ -1,0 +1,14 @@
+.navbar-custom {
+    background-image: url("../img/background.gif");
+    background-size: 87.8%;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+@media screen and (max-width: 750px) {
+    .navbar-custom {
+        background-size: 100%;
+        background-position: center center;
+    }
+}
+
