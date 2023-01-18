@@ -2,26 +2,29 @@ import "./assets/css/App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
+import Proyects from "./components/Proyects";
+import ContactMe from "./components/ContactMe";
 
 // import ContactMe from "./components/ContactMe";
 // import Footer from "./components/Footer";
-// import ContenedorProyectos from "./components/ContenedorProyectos";
 
 function App() {
   return (
     <>
       <div id="home">
-        <Navbar />
+        <Navbar/>
         <Header id="header" />
       </div>
       <div id="aboutMe">
-        <AboutMe />
+        <AboutMe/>
       </div>
-              {/* <div id="proyects">
-        <ContenedorProyectos />
+      <div id="proyects">
+        <Proyects/>
       </div>
-      <ContactMe />
-      <Footer /> */}
+      <div id="contactMe">
+        <ContactMe/>
+      </div>
+      {/* <Footer /> */}
     </>
   );
 }

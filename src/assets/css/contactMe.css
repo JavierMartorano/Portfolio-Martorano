@@ -1,0 +1,17 @@
+.containerContactMe h2{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 2em;
+    letter-spacing: 0em;
+    font-weight: bold;
+}
+
+.form{
+    width: 60%;
+}
+
+@media screen and (max-width: 750px) {
+    .form{
+        width: 100%;
+    }
+}

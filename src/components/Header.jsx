@@ -12,8 +12,13 @@ const Header = () => {
         <div className="presentacion">
           <h1 className="titulo">Javier Martorano</h1>
           <img src={imgPerfil} className="img-fluid imgPerfil" alt="..." />
-          <p className="typewriter">| Desarrollador Front-End |</p>
-          <p className="typewriter">| Desarrollador Web FullStack |</p>
+          <div className="typewriterContainer">
+          <p className="typewriter">Desarrollador Front-End</p>
+          </div>
+          <br />
+          <div className="typewriterContainer" style={{marginTop: "0vh"}}>
+          <p className="typewriter2">Desarrollador Web FullStack</p>
+          </div>
         </div>
       </div>
       <div class="arrow"></div>

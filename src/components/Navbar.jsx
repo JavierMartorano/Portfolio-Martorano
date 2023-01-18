@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Nav, Navbar, Button} from "react-bootstrap";
+import { Container, Nav, Navbar, Button, NavLink } from "react-bootstrap";
 import imgLogo from "../assets/img/logo.png";
 import cv from "../assets/img/CV Javier Martorano.pdf";
 import "../assets/css/navbar.css";
@@ -11,7 +11,7 @@ const navbar = () => {
       expand="lg"
     >
       <Container>
-        <Navbar.Brand href="#header">
+        <Navbar.Brand>
           <img
             src={imgLogo}
             width="50"

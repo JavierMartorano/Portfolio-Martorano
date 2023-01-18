@@ -1,0 +1,27 @@
+.containerProyects{
+    background-color: #393952;
+    padding-bottom: 2.5%;
+}
+
+.containerProyects h2{
+    text-align: center;
+    margin-top: 2.5%;
+    padding-top: 2%;
+    font-size: 2em;
+    letter-spacing: 0em;
+    font-weight: bold;
+ }
+
+.carrousel{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+@media screen and (max-width: 750px) {
+     .carrousel{
+        width:95%;
+        height:auto;
+    }
+}
