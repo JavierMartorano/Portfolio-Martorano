@@ -11,7 +11,11 @@
 }
 
 @media screen and (max-width: 750px) {
+    .containerContactMe h2{
+        margin-top: 5%;
+    }
+
     .form{
-        width: 100%;
+        width: 92%;
     }
 }
