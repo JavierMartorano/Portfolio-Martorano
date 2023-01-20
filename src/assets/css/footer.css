@@ -15,6 +15,10 @@
     align-items: center;
 }
 
+.icons a{
+    color : white
+}
+
 .contactIcon {
     padding: 7px;
     background: hsla(0, 0%, 85%, .1);

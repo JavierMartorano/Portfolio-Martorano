@@ -1,4 +1,4 @@
-.containerContactMe h2{
+.containerContactMe h2 {
     text-align: center;
     margin-top: 2%;
     font-size: 2em;
@@ -6,16 +6,36 @@
     font-weight: bold;
 }
 
-.form{
+.form {
     width: 60%;
 }
 
+.formControl {
+    background-color: hsla(0, 0%, 85%, .1);
+    transition: .3s ease-in-out;
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+}
+
+.form-control:focus{
+    background-color: hsla(0, 0%, 85%, .1);
+}
+
+.enviar {
+    background-color: rgba(217, 217, 217, 0.1);
+}
+
+.enviar:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (max-width: 750px) {
-    .containerContactMe h2{
+    .containerContactMe h2 {
         margin-top: 5%;
     }
 
-    .form{
+    .form {
         width: 92%;
     }
 }

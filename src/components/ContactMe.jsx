@@ -23,7 +23,7 @@ const ContactMe = () => {
       data: values,
     })
       .then((r) => {
-        setSending(true)
+        setSending(true);
         console.log("Recibido");
       })
       .catch((r) => {
@@ -63,10 +63,10 @@ const ContactMe = () => {
       <Container className="my-4 form">
         <Form onSubmit={handleSubmit(onSubmit, onError)}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Nombre</Form.Label>
             <Form.Control
+              className="formControl"
               type="text"
-              placeholder="Ingrese su nombre"
+              placeholder="Nombre"
               {...register("nombre", { required: "El nombre es obligatorio" })}
             />
             {errors.nombre && (
@@ -77,10 +77,10 @@ const ContactMe = () => {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Apellido</Form.Label>
             <Form.Control
+              className="formControl"
               type="text"
-              placeholder="Ingrese su apellido"
+              placeholder="Apellido"
               {...register("apellido", {
                 required: "El apellido es obligatorio",
               })}
@@ -93,10 +93,10 @@ const ContactMe = () => {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email</Form.Label>
             <Form.Control
+              className="formControl"
               type="email"
-              placeholder="Ingresar correo"
+              placeholder="Email"
               {...register("email", { required: "El correo es obligatorio" })}
             />
             {errors.email && (
@@ -107,10 +107,10 @@ const ContactMe = () => {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Teléfono</Form.Label>
             <Form.Control
+              className="formControl"
               type="tel"
-              placeholder="Ingresar su teléfono"
+              placeholder="Teléfono"
               {...register("telefono", {
                 required: "El numero de teléfono es obligatorio",
               })}
@@ -123,11 +123,11 @@ const ContactMe = () => {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Consulta</Form.Label>
             <Form.Control
+              className="formControl"
               as="textarea"
               rows={3}
-              placeholder="Ingrese su consulta"
+              placeholder="Consulta"
               {...register("consulta", {
                 required: "La consulta es obligatoria",
               })}
@@ -139,11 +139,7 @@ const ContactMe = () => {
             )}
           </Form.Group>
 
-          <Button
-            variant="secondary"
-            type="submit"
-            disabled={isSending}
-          >
+          <Button className="enviar" variant="secondary" type="submit" disabled={isSending}>
             {isSending ? "Recibido" : "Enviar"}
           </Button>
         </Form>
