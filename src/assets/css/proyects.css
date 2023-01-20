@@ -1,9 +1,11 @@
-.containerProyects{
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+
+.containerProyects {
     background-color: #393952;
     padding-bottom: 2.5%;
 }
 
-.containerProyects h2{
+.containerProyects h2 {
     text-align: center;
     margin-top: 2.5%;
     padding-top: 2%;
@@ -12,11 +14,21 @@
     font-weight: bold;
  }
 
-.carrousel{
+.carrousel {
     width: 60%;
     display: block;
     margin: 0 auto;
     margin-top: 2%;
+}
+
+.placeholderCarrousel h3{
+    font-family: 'Solitreo', cursive;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 0em;
+
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.1px rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 750px) {

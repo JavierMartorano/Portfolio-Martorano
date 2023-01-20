@@ -13,6 +13,7 @@
 .formControl {
     background-color: hsla(0, 0%, 85%, .1);
     transition: .3s ease-in-out;
+    color: white;
 }
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
@@ -20,6 +21,7 @@
 
 .form-control:focus{
     background-color: hsla(0, 0%, 85%, .1);
+    color: white;
 }
 
 .enviar {

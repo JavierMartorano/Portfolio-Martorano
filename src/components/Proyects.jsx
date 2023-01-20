@@ -1,45 +1,46 @@
 import React from "react";
 import "../assets/css/proyects.css";
 import Carousel from "react-bootstrap/Carousel";
+import MatchMaker from "../assets/img/MatchMaker.png";
+import StoreVinos from "../assets/img/AlguienDijoVino.mp4";
+import Tmdb from "../assets/img/Tmdb.png";
 
 const Proyects = () => {
   return (
     <div className="containerProyects">
       <h2>Proyectos</h2>
-      <Carousel fade variant="dark" className="carrousel">
+      <Carousel fade variant="white" className="carrousel">
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://reboot.studio/blog/content/images/2021/02/react-folder-structure.png"
+            src={MatchMaker}
             alt="First slide"
           />
-          <Carousel.Caption>
+          <Carousel.Caption className="placeholderCarrousel">
             <h3>Matchmaker</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
+        <video
             className="d-block w-100"
-            src="https://reboot.studio/blog/content/images/2021/02/react-folder-structure.png"
-            alt="Second slide"
-          />
-          <Carousel.Caption>
+            src={StoreVinos}
+            loop
+            autoPlay
+            muted
+            loading="lazy"
+          ></video>
+          <Carousel.Caption className="placeholderCarrousel">
             <h3>Alguien dijo vino?</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://reboot.studio/blog/content/images/2021/02/react-folder-structure.png"
+            src={Tmdb}
             alt="Third slide"
           />
-          <Carousel.Caption>
+          <Carousel.Caption className="placeholderCarrousel">
             <h3>TMDb - The Movie Database API</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
