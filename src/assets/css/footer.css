@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.containerFooter {
+    background-image: url("../img/background.gif");
+    background-size: 86%;
+    background-position: center;
+    padding-top: 1%;
+    display: grid;
+    place-content: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactIcon {
+    padding: 7px;
+    background: hsla(0, 0%, 85%, .1);
+    margin: 8px;
+    border: 1 solid hsla(0, 0%, 100%, .5);
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.contactIcon:hover {
+    background-color: white;
+    color: #e91f63;
+}
+
+.copyright {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 750px) {
+    .containerFooter {
+        background-size: 100%;
+    }
+}
