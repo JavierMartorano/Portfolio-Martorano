@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MatchMaker from "../assets/img/MatchMaker.png";
-import StoreVinos from "../assets/img/AlguienDijoVino.mp4";
+import CarCalendar from "../assets/img/gower.mp4";
 import SomosCorpora from "../assets/img/somoscorpora.mp4";
 import Akuario from "../assets/img/akuario.mp4";
 import Dosados from "../assets/img/dosados.mp4";
@@ -14,12 +14,14 @@ const projects = [
     src: SomosCorpora,
     alt: "SomosCorpora Project Video",
     link: "https://somoscorpora.com/",
+    description: "Migración del sitio web de SomosCorpora de PHP a un stack moderno utilizando React y Tailwind para el frontend y Python Flask para el backend. Se mejoró significativamente la experiencia del usuario mediante nuevas animaciones y estilos actualizados."
   },
   {
     name: "Akuario",
     mediaType: "video",
     src: Akuario,
     alt: "Akuario Project Video",
+    description: "Desarrollo completo de un ecommerce innovador junto a otro desarrollador. El proyecto incluyó un diseño único y funcionalidades avanzadas, como la visualización de estadísticas de usuario y un scrapper para mostrar la variación de distintos tipos de moneda en tiempo real. Tecnologías utilizadas: React, Python Flask, MySQL."
   },
   {
     name: "Dosados",
@@ -27,24 +29,28 @@ const projects = [
     src: Dosados,
     alt: "Dosados Project Video",
     link: "https://dosados.com.ar/",
+    description: "Realización de modificaciones y mantenimiento de la landing page de Dosados, una empresa de desarrollos inmobiliarios. Trabajé con una aplicación existente hecha en HTML, CSS y JavaScript, mejorando la interfaz de usuario y ofreciendo un servicio de mantenimiento continuo."
   },
   {
     name: "Matchmaker",
     mediaType: "image",
     src: MatchMaker,
     alt: "Matchmaker Project Image",
+    description: "Aplicación de React Native para organizar reuniones o partidos de forma sencilla con amigos, con perfiles editables y la opción de crear torneos."
   },
   {
-    name: "Ecommerce de vinos",
+    name: "Gower",
     mediaType: "video",
-    src: StoreVinos,
-    alt: "Ecommerce de vinos Project Video",
+    src: CarCalendar,
+    alt: "Calendario Project Video",
+    description: "Desarrollo de una plataforma web en React para la gestión de reservas de vehículos de alquiler. Incluye una interfaz de calendario intuitiva y un avanzado sistema de filtros, integrado con una API que utiliza una hoja de cálculo como base de datos."
   },
   {
     name: "Constructora Colonial",
     mediaType: "video",
     src: ConstructoraColonial,
     alt: "Constructora Colonial Project Video",
+    description: "Desarrollo en conjunto con Corpora para la empresa Constructora Colonial, migrando su sistema de trabajo interno de PHP a un stack moderno con React, Material UI, Python Flask, y MySQL, mejorando la eficiencia operativa y la experiencia del usuario interno."
   },
 ];
 
@@ -140,8 +146,8 @@ const Proyects = () => {
                     {selectedProject.name}
                   </h3>
                 )}
-                <p className="text-teal-400">
-                  Explora más detalles en el video
+                <p className="text-teal-400 mb-4">
+                  {selectedProject.description}
                 </p>
               </div>
             </div>
