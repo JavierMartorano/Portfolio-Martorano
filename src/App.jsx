@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
+import Technologies from "./components/Technologies"; // Importa el nuevo componente
 import Proyects from "./components/Proyects";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
@@ -37,6 +38,9 @@ function App() {
       </div>
       <div id="aboutMe">
         <AboutMe />
+      </div>
+      <div id="technologies">
+        <Technologies /> {/* Añade la nueva sección aquí */}
       </div>
       <div id="proyects">
         <Proyects />
